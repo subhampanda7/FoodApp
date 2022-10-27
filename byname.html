@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Reciepe By Name</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="nav_container"></div>
+
+    <div id="search_by_name">
+      <input type="text" placeholder="Enter Reciepe" id="reciepe" />
+      <button class="button-29" onclick="getData()">Search</button>
+    </div>
+
+    <div id="contains"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "./components.js";
+  document.getElementById("nav_container").innerHTML = navbar();
+
+  login_users = JSON.parse(localStorage.getItem("login_success")) || "LOG IN";
+
+  document.querySelector("#loginname").innerText = login_users;
+</script>
+<script src="./byname.js"></script>
+
+<script src="./login.js"></script>

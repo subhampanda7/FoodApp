@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4700b8f-4ac5-49ab-b9bb-3f67edea2d3d/dbhw69f-29d8306d-4eba-4cd9-949d-71a80f671dd3.jpg/v1/fill/w_1024,h_663,q_75,strp/food_typography_poster_by_hbcreative7_dbhw69f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjYzIiwicGF0aCI6IlwvZlwvYjQ3MDBiOGYtNGFjNS00OWFiLWI5YmItM2Y2N2VkZWEyZDNkXC9kYmh3NjlmLTI5ZDgzMDZkLTRlYmEtNGNkOS05NDlkLTcxYTgwZjY3MWRkMy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.X3_hqN2K56wNRgAk2azDuSTRXSQL-BbZsPmwcH-rGo4);
+        background-size: 90%;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="nav_container"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "./components.js";
+  document.getElementById("nav_container").innerHTML = navbar();
+
+  login_users = JSON.parse(localStorage.getItem("login_success")) || "LOG IN";
+
+  document.querySelector("#loginname").innerText = login_users;
+</script>
+
+<script src="./login.js">
+  
+</script>

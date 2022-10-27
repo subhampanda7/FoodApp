@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="nav_container"></div>
+    <div id="contains"></div>
+    <div id="login">
+      <input
+        type="text"
+        id="username"
+        placeholder="Username (do not iclude @)"
+      />
+      <input
+        type="text"
+        id="password"
+        placeholder="Password (do not iclude 12)"
+      />
+      <button onclick="login()">Log In</button>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "./components.js";
+  document.getElementById("nav_container").innerHTML = navbar();
+
+  login_users = JSON.parse(localStorage.getItem("login_success")) || "LOG IN";
+
+  document.querySelector("#loginname").innerText = login_users;
+</script>
+
+<script src="./login.js"></script>
